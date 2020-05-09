@@ -50,6 +50,10 @@ class InjectSummaryBuilder extends AbstractInjectBuilder {
             'found in library');
         return null;
       }
+      builderContext.log.info(
+            lib,
+            'PABLANKA PABLANKA =============>>> '
+            '${lib.source.uri}');
       summary = new LibrarySummary(
         SymbolPath.toAssetUri(lib.source.uri),
         injectors: injectors,
