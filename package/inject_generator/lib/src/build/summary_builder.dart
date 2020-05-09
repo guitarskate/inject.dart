@@ -55,7 +55,7 @@ class InjectSummaryBuilder extends AbstractInjectBuilder {
             'PABLANKA PABLANKA =============>>> '
             '${lib.source.uri}');
       final fileName = lib.source.uri.path.split('/').last;
-			if(fileName != 'app_injector.dart') return '';
+	    if(fileName != 'app_injector.dart') return null;
       summary = new LibrarySummary(
         SymbolPath.toAssetUri(lib.source.uri),
         injectors: injectors,
